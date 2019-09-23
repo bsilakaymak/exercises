@@ -94,8 +94,7 @@
            switch(operator){
             case"+":
               pendingVal = displayVal;
-
-              displayVal = "";
+              displayVal = " ";
               displayValElement.innerText = "+";
               evalStringArray.push(pendingVal);
               evalStringArray.push("+");
@@ -105,7 +104,7 @@
             case"-":
               pendingVal = displayVal;
               displayVal = " ";
-              displayValElement.innerText = displayVal;
+              displayValElement.innerText = "-";
               evalStringArray.push(pendingVal);
               evalStringArray.push("-");
               break;
@@ -113,7 +112,7 @@
             case"÷":
               pendingVal = displayVal;
               displayVal = " ";
-              displayValElement.innerText = displayVal;
+              displayValElement.innerText = "/";
               evalStringArray.push(pendingVal);
               evalStringArray.push("/");
               break;
@@ -121,7 +120,7 @@
             case"x":
               pendingVal = displayVal;
               displayVal = " ";
-              displayValElement.innerText = displayVal;
+              displayValElement.innerText = "x";
               evalStringArray.push(pendingVal);
               evalStringArray.push("*");
               break;  
