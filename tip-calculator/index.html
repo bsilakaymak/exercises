@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="calc-body">
+       <div class="heading block">TIP CALCULATOR</div>
+       <div class="form">
+           <div class="bill block">
+               <div>How much was your bill?</div>
+               <span>$</span><input class="bill-amount" type="text" required>
+           </div>
+           <div class="service-quality block">
+               <div>How was your service?</div>
+               <select class="service">
+                    <option value="outstanding">30%-Outstanding </option>
+                    <option value="good">20%-Good</option>
+                    <option value="bad">10%-Bad</option>
+                    <option value="terrible">5%-Terrible</option>
+                  </select>
+           </div>
+           <div class="block">
+               <div>How many people are sharing the bill?</div>
+               <input class="number-of-people" type="text" required>
+           </div>
+           <div class="block">
+               <button class="calc-button">CALCULATE</button>
+           </div>
+           <div class="output block">
+               <h4>TIP AMOUNT</h4>
+               <div class="result">$</div>
+               <div class="each">each</div>
+           </div>
+          
+       </div>
+    </div>
+ <script src="app.js"></script>   
+</body>
+</html>

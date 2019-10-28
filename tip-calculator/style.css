@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+.calc-body{
+    width: 30%;
+    border: 5px solid #94aa2a;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:5%;
+    background-color: #e5d8bf;
+}
+.heading{
+    background-color: #d55252;
+    color: #e5d8bf;
+    width: 100%;
+    margin-top:0;
+    padding: 0.5em 0;
+    font-size:1.25em;
+    font-weight: 700;
+    text-align: center;
+}
+.form{
+    color: #e47312;
+    font-weight: 600;
+}
+span{
+    padding-right: 0.25em;
+}
+.bill-amount{
+    margin-right:5%;
+}
+input{
+    width: 12em;
+    height: 2em;
+    font-size: 1em;
+    margin-top:0.5em;
+    border:none;
+    outline:none;
+    text-decoration: none;
+    background-color: #94aa2a;
+    color: #ffffff;
+    padding-left: 0.35em;
+    box-sizing: border-box;
+}
+select{
+    width: 12em;
+    height: 2em;
+    font-size:1em;
+    background-color: #94aa2a;
+    color: #ffffff;
+    text-align: center;
+    margin-top:0.5em;
+    border:none;
+    outline:none;
+    text-decoration: none;
+}
+option{
+    color: #e5d8bf;
+    text-align: center;
+    background-color: #94aa2a;
+
+}
+.block{
+    margin-top:0;
+    margin-bottom:1.25em;
+    text-align: center;
+}
+.calc-button{
+    background-color: #e47312; 
+    border: none;
+    outline: none;
+    color: #e5d8bf;
+    padding: 0.75em;
+    text-align: center;
+    text-decoration: none;
+}
+.each{
+    color: #d55252;
+    font-style: italic;
+}
+.each-hidden{
+    opacity: 0;
+}
+h4{
+    color: #d55252;
+}
+.result{
+    color: #94aa2a;
+}
+
+
+
+/*hover states*/
+
+.calc-button:hover{
+    background-color: #d55252;
+    cursor: pointer;
+}
+
+
+
+
+/*a lot of media queries*/
+
+@media (max-width:320px){
+    .calc-body{
+        width: 85%;
+    }
+}
+@media (min-width:321px) and (max-width:450px){
+    .calc-body{
+        width: 70%;
+    }
+}
+@media (min-width:450px) and (max-width: 600px) {
+    .calc-body{
+        width:55%;
+    }
+}
+@media(min-width: 601px) and (max-width: 850px) {
+    .calc-body{
+        width:40%;
+    }
+}
+@media (min-width: 1150px){
+    .calc-body{
+        width:25%;
+    }
+}
