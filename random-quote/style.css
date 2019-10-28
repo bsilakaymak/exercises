@@ -1,1 +1,85 @@
-/* add your styling here */
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:gray;
+}
+#quote-body{
+   width:75%;
+   height:60vh;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   margin:4em auto;
+   align-items: center;
+   justify-content: flex-end;
+   border:5px solid;
+}
+
+#text-wrapper{
+    width: 90%;
+    height: 30vh;
+    padding:5% 5%;
+    text-align: center;
+}
+#quote-text{
+    padding-left: 0.5em;
+}
+#author-name{
+  text-align:right;
+  width: 90%;
+  padding:2% 5%;
+}
+#lower-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 9vh;
+    padding: 1.5em;
+}
+#social-icons{
+    width:80%;
+    padding:1% 5%;
+    font-size: 3em;
+}
+#social-icons i{
+    padding: 0 2%;
+}
+#quote-button{
+    outline: none;
+    border:none;
+    width:20%;
+    height:9vh;
+    border:5px solid;
+    color: inherit;
+    margin-right: 2em;
+    font-weight: bold;
+    
+}
+
+#quote-button:hover, #social-icons i:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.animation{
+animation:wiggle 0.75s;
+}
+
+  @keyframes wiggle {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    10% {transform: translate(-1px, -2px) rotate(-1deg);}
+    20% {transform: translate(0px, 1px) rotate(1deg);}
+    30% {transform: translate(1px, 4px) rotate(0deg);}
+    40% {transform: translate(-3px, -1px) rotate(1deg);}
+    50% {transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {transform: translate(-3px, 1px) rotate(0deg);}
+    70% {transform: translate(1px, 3px) rotate(-1deg);}
+    80% {transform: translate(-1px, -1px) rotate(1deg);}
+    90% {transform: translate(1px, 2px) rotate(0deg); }
+    100% {transform: translate(-1px, -1px) rotate(-1deg);}
+  }
