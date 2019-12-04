@@ -1,0 +1,77 @@
+body{
+    color:purple;
+    background:pink;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+}
+
+.sbmt-btn{
+    width: 30%;
+    margin: auto;
+    margin-top:5%;
+    background: pink;
+    color:purple;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    text-decoration: none;
+    height: 2.5em;
+    font-size: 1em;
+    border: 2px solid purple;
+}
+.sbmt-btn:hover{
+    cursor: pointer;
+    background-color: rgb(250, 164, 178);
+}
+.txt-input{
+    margin-top: 5%;
+    background-color: pink;
+    border-bottom: 2px solid purple;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 3em;
+    font-size: 2em;
+    color: purple;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    color: rgb(252, 215, 221);
+    align-items: center;
+    justify-content: center;
+    border: 5px dashed pink;
+    padding:0.5em;
+    width: 35%;
+    transform: rotate(-2deg);
+    margin:2em auto;
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.result ul li{
+    list-style-type: none;
+}
+
+@media screen and (max-width:800px){
+    form{
+        width:50%;
+
+    }
+    .result{
+        width: 50%;
+    }
+    .sbmt-btn{
+        width: 50%;
+    }
+
+}

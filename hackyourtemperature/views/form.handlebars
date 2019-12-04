@@ -1,0 +1,16 @@
+<form action="/weather" method="post">
+    <input type="text" name="cityName" class="txt-input" placeholder="Search for a city">
+    <input type="submit" class="sbmt-btn" value="SEARCH">
+</form> 
+
+<div class="result">
+
+    <h3>{{{helloMessage}}} {{cityUppercase}} {{{errMessage}}}</h3>
+    <ul>
+       <li>{{temperature}}</li>
+       <li>{{pressure}}</li> 
+       <li>{{humidity}}</li>
+       <li>{{tempMin}}</li>
+       <li>{{tempMax}}</li>
+    </ul>
+</div>
