@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.sub-and-punch{
+    width: 30%;
+    min-height: 4em;
+    border: 5px solid orangered;
+    border-radius: 5%;
+    margin: auto;
+    padding: 3em 1em;
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    background-color: black;
+    z-index: 3;
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 10em;
+    width: 60%;
+    flex-basis: 80%;
+
+}
+
+.subject{
+    width: 30%;
+    min-height: 4em;
+    border: 5px solid black;
+    border-radius: 5%;
+    margin: auto;
+    padding: 3em 1em;
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: orangered;
+    transform: rotate(-8deg);
+    z-index: 2;
+}
+
+.punch{
+    width: 30%;
+    min-height: 4em;
+    border: 5px solid black;
+    border-radius: 5%;
+    margin: auto;
+    padding: 3em 1em;
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(19, 207, 35);
+    transform: rotate(8deg);
+    z-index: 2;
+
+}
+
+
+.fill-in{
+    border-bottom: 2px solid rgb(19, 207, 35);
+}
+form{
+    margin: auto;
+}
+#next{
+    margin:0 auto;
+    display: block;
+    min-width: 5%;
+    padding:1em;
+    margin-top: 2%;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: orangered;
+    color: black;
+    z-index: 4;
+    flex-basis: 20%;
+    font-weight: 800;
+}
+#s-input, #p-input{
+    display: block;
+    background-color: rgb(19, 207, 35);
+    color: orangered; 
+    margin: 0.5em auto;
+    border: none;
+    outline:none;
+    text-decoration: none;
+    width: 20%;
+    height: 2em;
+}
+#input-form{
+    margin: auto;
+}
+#next:hover{
+    background-color: rgb(19, 207, 35); 
+    cursor: pointer;
+    transform: scale(1.02);
+    border:5px solid black;
+}
+#send-input:hover{
+    background-color: rgb(19, 207, 35); 
+    cursor: pointer;
+    transform: scale(1.02);
+    border:5px solid black;
+}
+#send-input{
+    margin:0 auto;
+    display: block;
+    min-width: 5%;
+    padding:0.2em;
+    margin-top: 1%;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: orangered;
+    color: black;
+    font-weight: 800;
+}
+.container{
+    margin-top:5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow:1;    
+    flex-direction: column;
+}
+
+@media (min-width:750px) and (max-width:1000px){
+    #cards{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:749px){
+    #cards{
+        width:90%;
+    }
+ 
+    .sub-and-punch, .subject, .punch{
+        min-height: 3em;
+        display: flex;
+        font-size:1.5em;
+    }
+}
+
+@media screen and (max-width:499px){
+    .sub-and-punch, .subject, .punch{
+        min-height: 2em;
+        display: flex;
+        font-size:1.25em;
+        padding: 1.5em 1em;
+    }
+    #cards{
+        min-width: 90%;
+    }
+
+    #next{
+        padding: 0.5em;
+        font-size: 0.75em;
+        margin-top:5%;
+    }
+}

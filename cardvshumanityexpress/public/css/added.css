@@ -1,0 +1,30 @@
+body{
+    background-color:  rgb(19, 207, 35); ;
+}
+#input-msg{
+    color:orangered;
+    font-size: 2em;
+    width:100%;
+}
+#go-back{
+    margin:0 auto;
+    display: block;
+    min-width: 5%;
+    padding:1em;
+    margin-top: 5%;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: orangered;
+    color: black;
+    font-weight: 800;
+}
+p{
+    text-align: center;
+}
+#go-back:hover{
+    background-color: rgb(19, 207, 35); 
+    cursor: pointer;
+    transform: scale(1.02);
+    border:5px solid black;
+}

@@ -1,0 +1,22 @@
+<div class="container">
+    <p>{{warningMessage}}</p>
+    <div id="cards">
+        <div class='subject'><span>{{subj}}</span></div>
+        <div class='sub-and-punch'>
+            <p><span class='fill-in'>{{defaultSubj}}{{subj}}</span> is great to <span
+                    class='fill-in'>{{defaultPunch}}{{punch}}</span></p>
+        </div>
+        <div class='punch'><span>{{punch}}</span></div>
+    </div>
+
+</div>
+    <form action="/" method="POST">
+        <input type="submit" id='next' name="click" value="CLICK" />
+    </form>
+    <form action="/added" method="POST" id="input-form">
+        <input type="text" name="subjectInput" id="s-input" placeholder="add a subject">
+        <input type="text" name="punchlineInput" id="p-input" placeholder="add a punchline">
+        <input type="submit" value="SEND" id="send-input">
+
+    </form>
+</div>
